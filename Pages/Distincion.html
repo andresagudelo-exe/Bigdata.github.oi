@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distinction</title>
+    <style>
+        body {
+            font-family: Arial Narrow, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            color: #6b6b6b;
+            height: 30vh;
+            overflow: hidden;
+            background-color: #2e49e500;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+            filter: saturate(20%) invert(100%);
+            z-index: -1;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            line-height: 30vh;
+            color: #5e5e5e;
+            z-index: 1;
+            position: relative;
+        }
+
+        header img.logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 150px;
+            z-index: 2;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            background-color: #ddd;
+            padding: 10px 20px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #bbb;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+        }
+
+        .back-button img {
+            width: 50px;
+            cursor: pointer;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: #3a3a3a;
+        }
+
+        .footer img {
+            width: 50px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+                line-height: 20vh;
+            }
+
+            nav a {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <video class="video-background" autoplay muted loop>
+            <source src="../multimedia/web.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+        <img src="../multimedia/Logo.png" alt="Logo" class="logo">
+        <h1>The distinction of 5V in Statistics Domain</h1>
+    </header>
+
+    <!-- Botón de Volver -->
+    <div class="back-button">
+        <a href="./Step 1.html">
+            <img src="../multimedia/Boton-Back.png" alt="Volver">
+        </a>
+    </div>
+
+    <div class="content">
+        <table>
+            <tr>
+                <th>Aspect</th>
+                <th>Statistics</th>
+                <th>Business Intelligence</th>
+            </tr>
+            <tr>
+                <td>Volume</td>
+                <td>In Statistics, volume refers to the vast amounts of data collected, which requires sophisticated methods to analyze and interpret meaningfully.</td>
+                <td>In Business Intelligence, volume relates to the large datasets that organizations must manage to extract actionable insights.</td>
+            </tr>
+            <tr>
+                <td>Velocity</td>
+                <td>Velocity in Statistics is concerned with the speed at which data is generated and the need for real-time or near-real-time analysis.</td>
+                <td>Velocity in Business Intelligence emphasizes the importance of quickly processing data to provide timely insights for decision-making.</td>
+            </tr>
+            <tr>
+                <td>Variety</td>
+                <td>Statistics deals with a variety of data types, requiring different models and techniques to handle structured, semi-structured, and unstructured data.</td>
+                <td>In Business Intelligence, variety is crucial for integrating diverse data sources, such as structured databases and unstructured social media data, into a cohesive analysis.</td>
+            </tr>
+            <tr>
+                <td>Veracity</td>
+                <td>In Statistics, veracity focuses on the accuracy and reliability of data, ensuring that the conclusions drawn are valid and trustworthy.</td>
+                <td>In Business Intelligence, veracity is about ensuring data quality, as poor-quality data can lead to misleading business insights.</td>
+            </tr>
+            <tr>
+                <td>Value</td>
+                <td>Statistics emphasizes the value of data in terms of its ability to inform, predict, and explain phenomena through rigorous analysis.</td>
+                <td>In Business Intelligence, value is measured by the impact data-driven decisions have on achieving business goals and improving performance.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        © Andrés Agudelo
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG DATA INTEGRATION</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial Narrow', sans-serif;
+            color: #fff;
+            background: #ffffff;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.45; /* Transparencia del 75% */
+            filter: invert(100%) saturate(2%); /* Invertir colores y saturación reducida */
+            z-index: -1;
+        }
+
+        .content {
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            color: hsl(0, 0%, 23%); /* Color del título */
+            font-size: 4em; /* Tamaño del título aumentado */
+            margin: 0 0 30px 0; /* Separación inferior del título */
+            font-family: 'Arial Narrow', sans-serif;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: #49494900; /* Color de Andrés Agudelo */
+            font-size: 1.5em;
+            margin: 10px 0;
+            font-family: 'Arial Narrow', sans-serif;
+            font-style: italic;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            font-family: 'Arial Narrow', sans-serif;
+        }
+
+        .button-container {
+            margin: 20px 0;
+        }
+
+        .button {
+            background-color: hsla(0, 0%, 44%, 0.74); /* Color del botón */
+            color: #fff;
+            border: none;
+            padding: 10px 20px; /* Botón más pequeño */
+            font-size: 0.9em; /* Tamaño de fuente reducido */
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s;
+            font-family: 'Arial Bold', sans-serif;
+        }
+
+        .button:hover {
+            background-color: #b4b4b4;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            width: 100%;
+            color: #3b3b3b; /* Color del copyright */
+            font-family: 'Arial Narrow', sans-serif;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        @media (max-width: 908px) {
+            h1 {
+                font-size: 3em; /* Tamaño reducido para pantallas pequeñas */
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            .button {
+                padding: 8px 16px; /* Tamaño de botón adaptado para pantallas pequeñas */
+                font-size: 0.8em; /* Tamaño de fuente adaptado */
+            }
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay muted loop>
+        <source src="multimedia/web.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+    </video>
+    
+    <div class="content">
+        <img src="multimedia/Logo.png" alt="Logo" style="width: 200px; margin-bottom: 20px;">
+        <h1>BIG DATA INTEGRATION</h1>
+        <h2>por Andrés Agudelo</h2>
+        <p></p>
+        
+        <div class="button-container">
+            <a href="Pages/Step 1.html" class="button">Step 1</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; Andrés Agudelo</p>
+    </div>
+</body>
+</html>
