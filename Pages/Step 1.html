@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEP 1 - BIG DATA</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial Narrow', sans-serif;
+            color: #fff;
+            background: #ffffff;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.45; 
+            filter: invert(100%) saturate(2%); 
+            z-index: -1;
+        }
+
+        .content {
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            color: hsl(0, 0%, 23%); 
+            font-size: 4em; 
+            margin: 0 0 30px 0; 
+            font-family: 'Arial Narrow', sans-serif;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            background-color: hsla(0, 0%, 44%, 0.74);
+            color: #fff;
+            border: none;
+            padding: 10px 20px; 
+            font-size: 0.9em; 
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s;
+            font-family: 'Arial Bold', sans-serif;
+        }
+
+        nav a:hover {
+            background-color: #b4b4b4;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+        }
+
+        .back-button img {
+            width: 50px;
+            cursor: pointer;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            width: 100%;
+            color: #3b3b3b; 
+            font-family: 'Arial Narrow', sans-serif;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        @media (max-width: 908px) {
+            h1 {
+                font-size: 3em; 
+            }
+
+            nav a {
+                padding: 8px 16px; 
+                font-size: 0.8em; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay muted loop>
+        <source src="../multimedia/web.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+    </video>
+
+    <div class="back-button">
+        <a href="../index.html">
+            <img src="../multimedia/Boton-Back.png" alt="Volver">
+        </a>
+    </div>
+    
+    <div class="content">
+        <img src="../multimedia/Logo.png" alt="Logo" style="width: 200px; margin-bottom: 20px;">
+        <h1>STEP 1 - BIG DATA INTEGRATION</h1>
+        <p></p>
+        <nav>
+            <a href="Linea de Tiempo Big Data.html">Big Data Timeline</a>
+            <a href="Mapa Conceptual Big Data.html">Big Data Concept Map</a>
+            <a href="Implicaciones del Big Data.html">Big Data Implications</a>
+            <a href="Distincion.html">Distinction of the 5Vs</a>
+            <a href="Reflexion.html">Reflection</a>
+        </nav>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; Andrés Agudelo</p>
+    </div>
+</body>
+</html>
