@@ -85,32 +85,14 @@
             }
         }
 
-        .canva-container {
-            position: relative;
+        .pdf-viewer {
             width: 100%;
-            height: 0;
-            padding-top: 75%;
-            padding-bottom: 0;
-            box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
-            margin-top: 1.6em;
-            margin-bottom: 0.9em;
-            overflow: hidden;
-            border-radius: 8px;
-            will-change: transform;
-        }
-
-        .canva-container iframe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
+            height: 80vh;
             border: none;
-            padding: 0;
-            margin: 0;
+            margin-top: 1em;
         }
 
-        .canva-link {
+        .pdf-link {
             display: block;
             margin: 1em auto;
             text-align: center;
@@ -134,10 +116,8 @@
             <img src="../multimedia/Boton-Back.png" alt="Volver">
         </a>
     </div>
-    <div class="canva-container">
-        <iframe loading="lazy" src="https://www.canva.com/design/DAGQ1Qn3K0I/_WM8UiLnDu-8dAlCSeL4tQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
-    </div>
-    <a href="https://www.canva.com/design/DAGQ1Qn3K0I/_WM8UiLnDu-8dAlCSeL4tQ/view?utm_content=DAGQ1Qn3K0I&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener" class="canva-link">DATA DOMAIN de Andrés Agudelo</a>
+    <iframe class="pdf-viewer" src="../multimedia/Data Domain.pdf"></iframe>
+    <a href="../multimedia/Data Domain.pdf" target="_blank" class="pdf-link">Descargar PDF: Data Domain de Andrés Agudelo</a>
     <div class="footer">
         © Andrés Agudelo
     </div>
