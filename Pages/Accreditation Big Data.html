@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accreditiation</title>
+    <style>
+        body {
+            font-family: Arial Narrow, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            color: #6b6b6b;
+            height: 30vh;
+            overflow: hidden;
+            background-color: #2e49e500;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+            filter: saturate(20%) invert(100%);
+            z-index: -1;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            line-height: 30vh;
+            color: #5e5e5e;
+            z-index: 1;
+            position: relative;
+        }
+
+        header img.logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 150px;
+            z-index: 2;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+        }
+
+        .back-button img {
+            width: 50px;
+            cursor: pointer;
+        }
+
+        .pdf-viewer {
+            margin-top: 30px;
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: #3a3a3a;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+                line-height: 20vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <video class="video-background" autoplay muted loop>
+            <source src="../multimedia/web.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+        <img src="../multimedia/Logo.png" alt="Logo" class="logo">
+        <h1>Accreditiation - Big Data 101</h1>
+    </header>
+
+    <!-- Botón de Volver -->
+    <div class="back-button">
+        <a href="./Step 2.html">
+            <img src="../multimedia/Boton-Back.png" alt="Volver">
+        </a>
+    </div>
+
+    <!-- Visor de PDF -->
+    <iframe class="pdf-viewer" src="../multimedia/IBM.pdf"></iframe>
+
+    <div class="footer">
+        © Andrés Agudelo
+    </div>
+</body>
+</html>
